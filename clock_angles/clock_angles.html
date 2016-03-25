@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clock Angles! Have fun with Dart!</title>
+    <link rel="stylesheet" href="clock_angles.css">
+    <script defer type="application/dart" src="clock_angles.dart"></script>
+    <script defer type="text/javascript" src="packages/browser/dart.js"></script>
+  </head>
+  <body bgcolor="black">
+    <h1>Clock Angles!</h1>
+
+    <div id="container">
+      <canvas id="area" height="300px"></canvas>
+    </div>
+
+    <br>
+
+    <div>
+      <label>Hours: </label> <label id="selh">0</label>
+      <input id="sliderh" type="range" max="23" value="0" />
+        <br>
+        <label>Minutes: </label> <label id="selm">10</label>
+        <input id="sliderm" type="range" max="59" value="10" />
+        <br>
+        <label>Angle between the hour and minute hands: </label> <label id="anglediff"></label>
+
+    </div>
+
+  </body>
+</html>

@@ -10,7 +10,7 @@ var input = [
   [8, 20]
 ];
 
-double P(d, h) => h <= 1 ? 1.0 : 1 / d * P(d, h - d) + max(d - h, 0) * 1 / d;
+double P(d, h) => h <= 1 ? 1.0 : 1 / d * (P(d, h - d) + max(d - h, 0));
 String pad(v, width) => v.toString().padLeft(width);
 
 void main() {
